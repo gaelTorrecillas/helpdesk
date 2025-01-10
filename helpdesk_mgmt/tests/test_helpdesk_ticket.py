@@ -9,6 +9,7 @@ class TestHelpdeskTicket(TestHelpdeskTicketBase):
         super().setUpClass()
         cls.ticket = cls.ticket_a_unassigned
 
+<<<<<<< HEAD
     def test_helpdesk_ticket_team_company(self):
         ticket_a = self.env["helpdesk.ticket"].create(
             {
@@ -59,6 +60,8 @@ class TestHelpdeskTicket(TestHelpdeskTicketBase):
         )
         self.assertEqual(ticket.company_id, self.company)
 
+=======
+>>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
     def test_helpdesk_ticket_datetimes(self):
         old_stage_update = self.ticket.last_stage_update
         self.assertTrue(

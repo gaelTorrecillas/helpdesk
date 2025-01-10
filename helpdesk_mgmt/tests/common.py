@@ -14,7 +14,10 @@ class TestHelpdeskTicketBase(common.TransactionCase):
             "mail_notrack": True,
             "no_reset_password": True,
         }
+<<<<<<< HEAD
         cls.company = cls.env.company
+=======
+>>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
         cls.user_own = new_test_user(
             cls.env,
             login="helpdesk_mgmt-user_own",

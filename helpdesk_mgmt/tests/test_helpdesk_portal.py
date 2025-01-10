@@ -52,7 +52,11 @@ class TestHelpdeskPortalBase(HttpCaseWithUserPortal):
         data.update(**values)
         return self.env["helpdesk.ticket"].create(data)
 
+<<<<<<< HEAD
     def _submit_ticket(self, files=None, **values):
+=======
+    def _submit_ticket(self, **values):
+>>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
         data = {
             "category": self.env.ref("helpdesk_mgmt.helpdesk_category_1").id,
             "csrf_token": http.Request.csrf_token(self),
@@ -60,7 +64,11 @@ class TestHelpdeskPortalBase(HttpCaseWithUserPortal):
             "description": "\n".join(self.new_ticket_desc_lines),
         }
         data.update(**values)
+<<<<<<< HEAD
         resp = self.url_open("/submitted/ticket", data=data, files=files)
+=======
+        resp = self.url_open("/submitted/ticket", data=data)
+>>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
         self.assertEqual(resp.status_code, 200)
 
 
@@ -204,6 +212,7 @@ class TestHelpdeskPortal(TestHelpdeskPortalBase):
         self.assertTrue(resp.is_redirect)  # http://127.0.0.1:8069/my/ticket/<ticket-id>
         self.assertTrue(resp.headers["Location"].endswith(f"/my/ticket/{ticket.id}"))
         return resp
+<<<<<<< HEAD
 
     def test_submit_ticket_with_attachments(self):
         self.authenticate("test-basic-user", "test-basic-user")
@@ -235,3 +244,5 @@ class TestHelpdeskPortal(TestHelpdeskPortalBase):
         # check that both files are public (access_token is set)
         self.assertTrue(attachment_ids[0].access_token)
         self.assertTrue(attachment_ids[1].access_token)
+=======
+>>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
