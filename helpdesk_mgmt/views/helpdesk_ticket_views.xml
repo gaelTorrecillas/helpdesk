@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<?xml version='1.0' encoding='utf-8' ?>
-=======
-<?xml version="1.0" encoding="utf-8" ?>
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
+<?xml version='1.0' encoding='utf-8'?>
 <odoo>
     <record
         id="action_helpdesk_ticket_kanban_from_dashboard"
@@ -131,9 +127,6 @@
                         domain="[]"
                         context="{'group_by':'tag_ids'}"
                     />
-<<<<<<< HEAD
-                </group>
-=======
                     <filter
                         string="Kanban State"
                         name="kanban_state"
@@ -170,7 +163,6 @@
                         select="multi"
                     />
                 </searchpanel>
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
             </search>
         </field>
     </record>
@@ -201,15 +193,6 @@
                     />
                     <div class="oe_button_box" name="button_box">
                     </div>
-<<<<<<< HEAD
-                    <div class="oe_title">
-                        <h1 class="oe_title">
-                            <field name="number" />
-                        </h1>
-                        <h2 class="o_row">
-                            <field name="name" />
-                        </h2>
-=======
                     <field name="priority" widget="priority" class="me-3" />
                     <div class="oe_title pe-0">
                         <h1 class="d-flex justify-content-between align-items-center">
@@ -228,21 +211,14 @@
                                 widget="state_selection"
                             />
                         </h1>
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
                     </div>
                     <group name="main">
                         <group>
                             <field name="active" invisible="1" />
-<<<<<<< HEAD
                             <field name="team_id" options='{"always_reload": True}' />
                             <field name="user_ids" invisible="1" readonly="1" />
                             <field name="user_id" options='{"always_reload": True}' />
                             <field name="priority" widget="priority" />
-=======
-                            <field name="team_id" options="{'always_reload': True}" />
-                            <field name="user_ids" invisible="1" readonly="1" />
-                            <field name="user_id" options="{'always_reload': True}" />
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
                             <field
                                 name="company_id"
                                 options="{'no_create': True}"
@@ -250,10 +226,7 @@
                             />
                             <field name="create_date" readonly="1" />
                             <field name="channel_id" />
-<<<<<<< HEAD
-=======
                             <field name="kanban_state" widget="state_selection" />
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
                         </group>
                         <group>
                             <field name="partner_id" />
@@ -265,17 +238,11 @@
                                 widget="many2many_tags"
                                 options="{'no_create_edit': True, 'color_field': 'color',}"
                             />
-<<<<<<< HEAD
                             <field name="sequence" groups="base.group_no_one" />
-=======
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
                         </group>
                     </group>
                     <notebook>
                         <page string="Description" name="description">
-<<<<<<< HEAD
-                            <field name="description" widget="html" />
-=======
                             <field
                                 name="description"
                                 widget="html"
@@ -288,17 +255,13 @@
                                 type="html"
                                 options="{'collaborative': true, 'resizable': false}"
                             />
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
                         </page>
                         <page string="Other Information" name="other_info">
                             <group>
                                 <field name="last_stage_update" readonly="1" />
                                 <field name="assigned_date" readonly="1" />
                                 <field name="closed_date" readonly="1" />
-<<<<<<< HEAD
-=======
                                 <field name="sequence" groups="base.group_no_one" />
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
                             </group>
                         </page>
                     </notebook>
@@ -354,10 +317,7 @@
                     decoration-info="unattended == True"
                     decoration-muted="closed == True"
                 />
-<<<<<<< HEAD
-=======
                 <field name="kanban_state" widget="state_selection" optional="hide" />
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
             </tree>
         </field>
     </record>

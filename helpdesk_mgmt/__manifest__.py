@@ -4,11 +4,7 @@
     "name": "Helpdesk Management",
     "summary": """
         Helpdesk""",
-<<<<<<< HEAD
     "version": "16.0.2.7.0",
-=======
-    "version": "16.0.2.6.1",
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
     "license": "AGPL-3",
     "category": "After-Sales",
     "author": "AdaptiveCity, "
@@ -27,10 +23,7 @@
         "security/ir.model.access.csv",
         "views/res_partner_views.xml",
         "views/res_config_settings_views.xml",
-<<<<<<< HEAD
         "views/helpdesk_ticket_templates.xml",
-=======
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
         "views/helpdesk_ticket_menu.xml",
         "views/helpdesk_ticket_team_views.xml",
         "views/helpdesk_ticket_stage_views.xml",
@@ -39,10 +32,7 @@
         "views/helpdesk_ticket_tag_views.xml",
         "views/helpdesk_ticket_views.xml",
         "views/helpdesk_dashboard_views.xml",
-<<<<<<< HEAD
-=======
         "templates/helpdesk_ticket_templates.xml",
->>>>>>> bd6f564a ([IMP]helpdesk_mgmt: Add internal notes)
     ],
     "demo": ["demo/helpdesk_demo.xml"],
     "assets": {
